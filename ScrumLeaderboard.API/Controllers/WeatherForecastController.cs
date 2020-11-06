@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace ScrumpLeaderboard.API0.Controllers
+namespace ScrumLeaderboard.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]

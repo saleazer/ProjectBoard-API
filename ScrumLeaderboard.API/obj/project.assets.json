@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\salea\\source\\repos\\ScrumLeaderboard.API\\ScrumpLeaderboard.API0\\ScrumpLeaderboard.API.csproj",
-      "projectName": "ScrumpLeaderboard.API",
-      "projectPath": "C:\\Users\\salea\\source\\repos\\ScrumLeaderboard.API\\ScrumpLeaderboard.API0\\ScrumpLeaderboard.API.csproj",
+      "projectUniqueName": "C:\\Users\\salea\\source\\repos\\ScrumLeaderboard.API\\ScrumLeaderboard.API\\ScrumLeaderboard.API.csproj",
+      "projectName": "ScrumLeaderboard.API",
+      "projectPath": "C:\\Users\\salea\\source\\repos\\ScrumLeaderboard.API\\ScrumLeaderboard.API\\ScrumLeaderboard.API.csproj",
       "packagesPath": "C:\\Users\\salea\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\salea\\source\\repos\\ScrumLeaderboard.API\\ScrumpLeaderboard.API0\\obj\\",
+      "outputPath": "C:\\Users\\salea\\source\\repos\\ScrumLeaderboard.API\\ScrumLeaderboard.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\salea\\AppData\\Roaming\\NuGet\\NuGet.Config",

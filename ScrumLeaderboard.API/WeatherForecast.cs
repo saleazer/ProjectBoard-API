@@ -1,6 +1,6 @@
 using System;
 
-namespace ScrumpLeaderboard.API0
+namespace ScrumLeaderboard.API
 {
     public class WeatherForecast
     {

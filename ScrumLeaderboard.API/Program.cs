@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace ScrumpLeaderboard.API0
+namespace ScrumLeaderboard.API
 {
     public class Program
     {

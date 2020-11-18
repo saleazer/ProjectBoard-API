@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrumLeaderboard.API", "ScrumLeaderboard.API.csproj", "{C4A16B10-9D9F-4FA5-A4C4-AF9E9E4E9260}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrumLeaderboard.DBUP", "..\ScrumLeaderboard.DBUP\ScrumLeaderboard.DBUP.csproj", "{B4F51B3D-318A-4EC8-8D72-C9AC117F5CCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrumLeaderboard.DATA", "..\ScrumLeaderboard.DATA\ScrumLeaderboard.DATA.csproj", "{0474C59D-3478-4959-BDA6-40A962CA6084}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{C4A16B10-9D9F-4FA5-A4C4-AF9E9E4E9260}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4A16B10-9D9F-4FA5-A4C4-AF9E9E4E9260}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4A16B10-9D9F-4FA5-A4C4-AF9E9E4E9260}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4F51B3D-318A-4EC8-8D72-C9AC117F5CCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4F51B3D-318A-4EC8-8D72-C9AC117F5CCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4F51B3D-318A-4EC8-8D72-C9AC117F5CCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4F51B3D-318A-4EC8-8D72-C9AC117F5CCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0474C59D-3478-4959-BDA6-40A962CA6084}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0474C59D-3478-4959-BDA6-40A962CA6084}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0474C59D-3478-4959-BDA6-40A962CA6084}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0474C59D-3478-4959-BDA6-40A962CA6084}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

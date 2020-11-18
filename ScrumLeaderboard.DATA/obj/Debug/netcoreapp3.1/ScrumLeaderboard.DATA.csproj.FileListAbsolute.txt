@@ -1,0 +1,9 @@
+C:\Users\salea\source\repos\ScrumLeaderboard.API\ScrumLeaderboard.DATA\bin\Debug\netcoreapp3.1\ScrumLeaderboard.DATA.deps.json
+C:\Users\salea\source\repos\ScrumLeaderboard.API\ScrumLeaderboard.DATA\bin\Debug\netcoreapp3.1\ScrumLeaderboard.DATA.dll
+C:\Users\salea\source\repos\ScrumLeaderboard.API\ScrumLeaderboard.DATA\obj\Debug\netcoreapp3.1\ScrumLeaderboard.DATA.csprojAssemblyReference.cache
+C:\Users\salea\source\repos\ScrumLeaderboard.API\ScrumLeaderboard.DATA\obj\Debug\netcoreapp3.1\ScrumLeaderboard.DATA.AssemblyInfoInputs.cache
+C:\Users\salea\source\repos\ScrumLeaderboard.API\ScrumLeaderboard.DATA\obj\Debug\netcoreapp3.1\ScrumLeaderboard.DATA.AssemblyInfo.cs
+C:\Users\salea\source\repos\ScrumLeaderboard.API\ScrumLeaderboard.DATA\bin\Debug\netcoreapp3.1\ScrumLeaderboard.DATA.pdb
+C:\Users\salea\source\repos\ScrumLeaderboard.API\ScrumLeaderboard.DATA\obj\Debug\netcoreapp3.1\ScrumLeaderboard.DATA.csproj.CoreCompileInputs.cache
+C:\Users\salea\source\repos\ScrumLeaderboard.API\ScrumLeaderboard.DATA\obj\Debug\netcoreapp3.1\ScrumLeaderboard.DATA.dll
+C:\Users\salea\source\repos\ScrumLeaderboard.API\ScrumLeaderboard.DATA\obj\Debug\netcoreapp3.1\ScrumLeaderboard.DATA.pdb

@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace ScrumLeaderboard.DATA
@@ -19,6 +20,18 @@ namespace ScrumLeaderboard.DATA
         public BoardItem QueryById(Int64 id)
         {
             return _context.BoardItem.Where(x => x.ID == id).FirstOrDefault();
+
+        }
+
+        public List<BoardItem> QueryByState(String State)
+        {
+            return _context.BoardItem.Where(x => x.State == State).ToList();
+
+        }
+
+        public List<BoardItem> QueryAll()
+        {
+            return _context.BoardItem.ToList();
 
         }
 

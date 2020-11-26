@@ -28,6 +28,18 @@ namespace ScrumLeaderboard.API.Controllers
             return JsonConvert.SerializeObject(_repository.QueryById(id));
         }
 
+        [HttpGet("searchByState/{State}")]
+        public string QueryByState([FromRoute] string State)
+        {
+            return JsonConvert.SerializeObject(_repository.QueryByState(State));
+        }
+
+        [HttpGet("all")]
+        public string QueryAll()
+        {
+            return JsonConvert.SerializeObject(_repository.QueryAll());
+        }
+
         [HttpPut()]
         public bool Update(BoardItem item)
         {

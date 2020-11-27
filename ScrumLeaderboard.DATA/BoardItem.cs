@@ -3,7 +3,7 @@ using System;
 
 namespace ScrumLeaderboard.DATA
 {
-    
+    //second comment test
     public class BoardItem
     {
         public Int64 ID { get; set; }

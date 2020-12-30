@@ -38,7 +38,10 @@ namespace ScrumLeaderboard.API
                 options.AddDefaultPolicy(
                     builder =>
                     {
-                        builder.WithOrigins("*");
+                        builder.WithOrigins("*")
+                         .AllowAnyHeader()
+                         .AllowAnyOrigin()
+                         .AllowAnyMethod();
                     });
             });
         }

@@ -50,12 +50,18 @@ namespace ScrumLeaderboard.DATA
                 else
                 {
                     //update logic
-                    ExistingItem = ItemToBeSaved;
+                    //ExistingItem = ItemToBeSaved;
+                    ExistingItem.Description = ItemToBeSaved.Description;
+                    ExistingItem.Effort = ItemToBeSaved.Effort;
+                    ExistingItem.ItemType = ItemToBeSaved.ItemType;
+                    ExistingItem.Priority = ItemToBeSaved.Priority;
+                    ExistingItem.State = ItemToBeSaved.State;
+                    ExistingItem.Title = ItemToBeSaved.Title;
                     _context.BoardItem.Update(ExistingItem);
                     _context.SaveChanges();
                 }
                 return true;
-            } catch
+            } catch (Exception ex)
             {
                 return false;
             }

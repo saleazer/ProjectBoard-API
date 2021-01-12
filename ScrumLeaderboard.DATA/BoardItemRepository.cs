@@ -44,6 +44,8 @@ namespace ScrumLeaderboard.DATA
                 if (ExistingItem == null)
                 {
                     //New logic
+                    ItemToBeSaved.CreateDate = DateTime.Now;
+                    ItemToBeSaved.LastUpdated = DateTime.Now;
                     _context.BoardItem.Add(ItemToBeSaved);
                     _context.SaveChanges();
                 }
@@ -57,6 +59,11 @@ namespace ScrumLeaderboard.DATA
                     ExistingItem.Priority = ItemToBeSaved.Priority;
                     ExistingItem.State = ItemToBeSaved.State;
                     ExistingItem.Title = ItemToBeSaved.Title;
+                    ExistingItem.LastUpdated = DateTime.Now;
+                    ExistingItem.Iteration = ItemToBeSaved.Iteration;
+                    ExistingItem.OwnerName = ItemToBeSaved.OwnerName;
+                    ExistingItem.ParentID = ItemToBeSaved.ParentID;
+
                     _context.BoardItem.Update(ExistingItem);
                     _context.SaveChanges();
                 }

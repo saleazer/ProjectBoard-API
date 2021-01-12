@@ -14,6 +14,13 @@ namespace ScrumLeaderboard.DATA
         public string State { get; set; }
         public string Priority { get; set; }
         public string Effort { get; set; }
+        public DateTime CreateDate { get; set; }
+        public DateTime LastUpdated { get; set; }
+        public Int32 Iteration { get; set; }
+        public string OwnerName { get; set; }
+        public string ParentID { get; set; }
+
+
 
 
     }

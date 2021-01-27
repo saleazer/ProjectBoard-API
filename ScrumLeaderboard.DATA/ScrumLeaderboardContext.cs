@@ -7,6 +7,8 @@ namespace ScrumLeaderboard.DATA
     {
         public DbSet<BoardItem> BoardItem { get; set; }
 
+        public DbSet<Project> Project { get; set; }
+
 
         public ScrumLeaderboardContext(DbContextOptions<ScrumLeaderboardContext> options) : base(options)
         {

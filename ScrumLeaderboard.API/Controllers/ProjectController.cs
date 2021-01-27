@@ -10,40 +10,32 @@ using ScrumLeaderboard.DATA;
 namespace ScrumLeaderboard.API.Controllers
 {
     [ApiController]
-    [Route("BoardItem")]
-    public class BoardItemController : ControllerBase
+    [Route("Project")]
+    public class ProjectController : ControllerBase
     {
-       
+        private readonly ProjectRepository _repository;
 
-        private readonly BoardItemRepository _repository;
-
-        public BoardItemController(BoardItemRepository repository)
+        public ProjectController(ProjectRepository repository)
         {
             _repository = repository;
         }
-                
+
         [HttpGet("{id}")]
         public string QueryById([FromRoute] int id)
         {
             return JsonConvert.SerializeObject(_repository.QueryById(id));
         }
 
-        [HttpGet("searchByState/{State}")]
-        public string QueryByState([FromRoute] string State)
+        [HttpGet("searchByName/{Name}")]
+        public string QueryByName([FromRoute] string Name)
         {
-            return JsonConvert.SerializeObject(_repository.QueryByState(State));
+            return JsonConvert.SerializeObject(_repository.QueryByName(Name));
         }
 
-        [HttpGet("searchByItemType/{ItemType}")]
-        public string QueryByItemType([FromRoute] string ItemType)
+        [HttpGet("searchByCreator/{Creator}")]
+        public string QueryByCreator([FromRoute] string Creator)
         {
-            return JsonConvert.SerializeObject(_repository.QueryByItemType(ItemType));
-        }
-
-        [HttpGet("searchByParentID/{ParentID}")]
-        public string QueryByParentID([FromRoute] string ParentID)
-        {
-            return JsonConvert.SerializeObject(_repository.QueryByParentID(ParentID));
+            return JsonConvert.SerializeObject(_repository.QueryByCreator(Creator));
         }
 
         [HttpGet("all")]
@@ -53,7 +45,7 @@ namespace ScrumLeaderboard.API.Controllers
         }
 
         [HttpPut()]
-        public bool Update(BoardItem item)
+        public bool Update(Project item)
         {
             return _repository.AddOrUpdate(item);
         }

@@ -32,7 +32,7 @@ namespace ScrumLeaderboard.API
             options.UseSqlServer(Configuration["ConnectionString"]));
             services.AddSwaggerGen();
             services.AddScoped<BoardItemRepository>();
-
+            services.AddScoped<ProjectRepository>();
             services.AddCors(options =>
             {
                 options.AddDefaultPolicy(

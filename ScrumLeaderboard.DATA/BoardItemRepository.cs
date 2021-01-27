@@ -29,6 +29,17 @@ namespace ScrumLeaderboard.DATA
 
         }
 
+        public List<BoardItem> QueryByItemType(String ItemType)
+        {
+            return _context.BoardItem.Where(x => x.ItemType == ItemType).ToList();
+
+        }
+        public List<BoardItem> QueryByParentID(String ParentID)
+        {
+            return _context.BoardItem.Where(x => x.ParentID == ParentID).ToList();
+
+        }
+
         public List<BoardItem> QueryAll()
         {
             return _context.BoardItem.ToList();
@@ -68,7 +79,7 @@ namespace ScrumLeaderboard.DATA
                     _context.SaveChanges();
                 }
                 return true;
-            } catch (Exception ex)
+            } catch (Exception)
             {
                 return false;
             }

@@ -34,18 +34,6 @@ namespace ScrumLeaderboard.API.Controllers
             return JsonConvert.SerializeObject(_repository.QueryByState(State));
         }
 
-        [HttpGet("searchByItemType/{ItemType}")]
-        public string QueryByItemType([FromRoute] string ItemType)
-        {
-            return JsonConvert.SerializeObject(_repository.QueryByItemType(ItemType));
-        }
-
-        [HttpGet("searchByParentID/{ParentID}")]
-        public string QueryByParentID([FromRoute] string ParentID)
-        {
-            return JsonConvert.SerializeObject(_repository.QueryByParentID(ParentID));
-        }
-
         [HttpGet("all")]
         public string QueryAll()
         {

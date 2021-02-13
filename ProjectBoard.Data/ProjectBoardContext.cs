@@ -1,20 +1,16 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
 
-namespace ScrumLeaderboard.DATA
+namespace ProjectBoard.Data
 {
-    public class ScrumLeaderboardContext : DbContext
+    public class ProjectBoardContext : DbContext
     {
         public DbSet<BoardItem> BoardItem { get; set; }
 
         public DbSet<Project> Project { get; set; }
 
-
-        public ScrumLeaderboardContext(DbContextOptions<ScrumLeaderboardContext> options) : base(options)
+        public ProjectBoardContext(DbContextOptions<ProjectBoardContext> options) : base(options)
         {
         }
     }
-
-    
-
 }

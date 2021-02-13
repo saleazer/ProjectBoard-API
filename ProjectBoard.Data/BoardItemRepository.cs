@@ -1,22 +1,19 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Text;
 using System.Linq;
 
-namespace ScrumLeaderboard.DATA
+namespace ProjectBoard.Data
 {
-    
     public class BoardItemRepository
     {
-        
-        private readonly ScrumLeaderboardContext _context;
+        private readonly ProjectBoardContext _context;
 
-        public BoardItemRepository(ScrumLeaderboardContext context)
+        public BoardItemRepository(ProjectBoardContext context)
         {
             _context = context;
 
         }
-
         public BoardItem QueryById(Int64 id)
         {
             return _context.BoardItem.Where(x => x.ID == id).FirstOrDefault();
@@ -79,7 +76,8 @@ namespace ScrumLeaderboard.DATA
                     _context.SaveChanges();
                 }
                 return true;
-            } catch (Exception)
+            }
+            catch (Exception)
             {
                 return false;
             }
@@ -101,5 +99,4 @@ namespace ScrumLeaderboard.DATA
         }
 
     }
-
 }

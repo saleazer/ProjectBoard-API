@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ScrumLeaderboard.DATA
+namespace ProjectBoard.Data
 {
     public class User
     {
@@ -11,5 +11,4 @@ namespace ScrumLeaderboard.DATA
         public string Password { get; set; }
         public DateTime CreateDate { get; set; }
     }
-
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ScrumLeaderboard.DATA
+namespace ProjectBoard.Data
 {
     public class ProjectAccess
     {
@@ -11,5 +11,4 @@ namespace ScrumLeaderboard.DATA
         public int UserID { get; set; }
         public string AccessLevel { get; set; }
     }
-
 }

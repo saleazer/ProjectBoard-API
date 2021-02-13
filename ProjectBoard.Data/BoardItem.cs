@@ -1,10 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace ScrumLeaderboard.DATA
+namespace ProjectBoard.Data
 {
-    //second comment test
-    //how about this one
     public class BoardItem
     {
         public Int64 ID { get; set; }
@@ -19,11 +18,5 @@ namespace ScrumLeaderboard.DATA
         public Int32 Iteration { get; set; }
         public string OwnerName { get; set; }
         public string ParentID { get; set; }
-
-
-
-
     }
-
-
 }

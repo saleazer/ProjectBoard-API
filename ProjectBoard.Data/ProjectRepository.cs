@@ -1,17 +1,16 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Linq;
+using System.Collections.Generic;
+using System.Text;
 
-
-namespace ScrumLeaderboard.DATA
+namespace ProjectBoard.Data
 {
     public class ProjectRepository
     {
 
-        private readonly ScrumLeaderboardContext _context;
+        private readonly ProjectBoardContext _context;
 
-        public ProjectRepository(ScrumLeaderboardContext context)
+        public ProjectRepository(ProjectBoardContext context)
         {
             _context = context;
 
@@ -85,10 +84,4 @@ namespace ScrumLeaderboard.DATA
         }
 
     }
-
-
-
-
-
 }
-

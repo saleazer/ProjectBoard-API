@@ -1,19 +1,19 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using ScrumLeaderboard.DATA;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using ProjectBoard.Data;
 
-namespace ScrumLeaderboard.API
+namespace ProjectBoard.Api
 {
     public class Startup
     {
@@ -27,10 +27,10 @@ namespace ScrumLeaderboard.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers(); 
-            services.AddDbContext<ScrumLeaderboardContext>(options =>
-            options.UseSqlServer(Configuration["ConnectionString"]));
+            services.AddControllers();
             services.AddSwaggerGen();
+            services.AddDbContext<ProjectBoardContext>(options =>
+                options.UseSqlServer(Configuration["ConnectionString"]));
             services.AddScoped<BoardItemRepository>();
             services.AddScoped<ProjectRepository>();
             services.AddCors(options =>
@@ -63,6 +63,7 @@ namespace ScrumLeaderboard.API
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
             app.UseCors();
 
             app.UseAuthorization();

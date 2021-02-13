@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ScrumLeaderboard.DATA
+namespace ProjectBoard.Data
 {
-    public class Project 
+    public class Project
     {
         public int ID { get; set; }
         public string Name { get; set; }
@@ -12,6 +12,4 @@ namespace ScrumLeaderboard.DATA
         public string Creator { get; set; }
         public DateTime CreateDate { get; set; }
     }
-
 }
-

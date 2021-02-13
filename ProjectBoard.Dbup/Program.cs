@@ -3,7 +3,7 @@ using System;
 using System.Linq;
 using System.Reflection;
 
-namespace ScrumLeaderboard.DBUP
+namespace ProjectBoard.Dbup
 {
     class Program
     {
@@ -11,7 +11,7 @@ namespace ScrumLeaderboard.DBUP
         {
             var connectionString =
                 args.FirstOrDefault()
-                ?? "Server=(localdb)\\mssqllocaldb; Database=ScrumLeaderboard; Trusted_connection=true";
+                ?? "Server=(localdb)\\mssqllocaldb; Database=ProjectBoard; Trusted_connection=true";
             EnsureDatabase.For.SqlDatabase(connectionString);
 
             var upgrader =
